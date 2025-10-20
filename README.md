@@ -69,8 +69,8 @@ The controller uses a **simple finite state machine (FSM)** with three states:
 
   ## Output Capture 2
 
-  ![Output_Capture(SRAM_ontroller2.PNG)
-
+  ![Output_Capture](SRAM_ontroller2.PNG)
+  
 ### 🔹 Ready Signal
 
 * The `ready` output indicates completion of the read/write operation.
@@ -89,6 +89,9 @@ The controller uses a **simple finite state machine (FSM)** with three states:
 * Monitors `read_data` and `ready` signals.
 * Validates that data is correctly written to and read from SRAM.
 * Can simulate timing delays for real SRAM modules.
+
+
+  ![Waveform](SRAM_WvForm.PNG)
 
 ### Example Test Sequence
 
