@@ -55,6 +55,8 @@ The controller uses a **simple finite state machine (FSM)** with three states:
 2. **READ**: Activate SRAM chip and output enable, read data, assert `ready`.
 3. **WRITE**: Activate SRAM chip and write enable, drive `write_data` to SRAM, assert `ready`.
 
+   ![SRAM_RTL_Schematic](SRAM_Con_FSM.PNG)
+
 ### 🔹 Data Bus Management
 
 * `sram_data` is bidirectional and controlled via `data_dir`:
@@ -62,6 +64,10 @@ The controller uses a **simple finite state machine (FSM)** with three states:
   * `data_dir = 0`: Read mode (controller inputs from SRAM)
   * `data_dir = 1`: Write mode (controller drives data to SRAM)
 * Tristate buffer implemented using `assign sram_data = (data_dir) ? data_out : {DATA_WIDTH{1'bz}};`
+
+  ![SRAM_Output_Capture](sram_controller.PNG)
+
+  ![SRAM_Output_Capture(SRAM_ontroller2.PNG)
 
 ### 🔹 Ready Signal
 
