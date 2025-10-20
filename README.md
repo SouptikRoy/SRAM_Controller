@@ -67,7 +67,9 @@ The controller uses a **simple finite state machine (FSM)** with three states:
 
   ![SRAM_Output_Capture](sram_controller.PNG)
 
-  ![SRAM_Output_Capture(SRAM_ontroller2.PNG)
+  ## Output Capture 2
+
+  ![Output_Capture(SRAM_ontroller2.PNG)
 
 ### 🔹 Ready Signal
 
